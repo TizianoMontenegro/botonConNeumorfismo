@@ -1,0 +1,40 @@
+body{
+    background-color: #eee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+    flex-direction: column;
+}
+p{
+    background: linear-gradient(360deg,#333 , #777);
+
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+
+    font-size: 32px;
+    font-weight: 700;
+    font-family: Verdana;
+    text-align: center;
+    max-width: min-content;
+}
+#clickMe{
+    background-color: transparent;
+    font-weight: bolder;
+    font-size: 1.6rem;
+    padding: 1.2rem 1.8rem;
+    color: #222;
+    border: 2px solid #eee;
+    border-radius: .5rem;
+    transition: all .7s ease;
+    box-shadow: .5rem .5rem 1rem #ccc,
+    -.5rem -.5rem 1rem #fff;
+}
+#clickMe:hover{
+    box-shadow: .5rem .5rem 1rem #fff,
+    -.5rem -.5rem 1rem #ccc;
+}
+#clickMe:active{
+    box-shadow:inset .2rem .2rem 1rem #fff,
+    inset -.2rem -.2rem 1rem #ccc;
+}
